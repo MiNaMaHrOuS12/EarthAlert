@@ -1,0 +1,61 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* section importing */
+@import url("sections/home.css");
+@import url("sections/causes.css");
+@import url("sections/contact.css");
+@import url("sections/effects.css");
+@import url("sections/solutions.css");
+@import url("sections/weather-App.css");
+@import url("sections/what-u-can-do.css");
+
+
+:root{
+    --primary-color: #2E7D32;
+    --secondary-color:#0288D1;
+    --button-color: #F57C00;
+    --button-hover: #EF6C00;
+    --bg-color:#F5F5F5;
+    --text-color: #212121; 
+    --heading-montserrat:'Montserrat', sans-serif;
+    --body-open-sans: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--heading-montserrat);
+  }
+
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    font-family: var(--body-open-sans);
+    color: var(--primary-color);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
