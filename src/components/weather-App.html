@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+    <link rel="icon" type="image/png" href="../../public/assets/logo.png">
+</head>
+<body>
+    <header>
+        <nav class="flex-between">
+            <div class="logo flex-center">
+                <img src="../../public/assets/logo.png" alt="logo">
+                <h2>EcoAwaken</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="effects.html">Effects</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="weather-App.html">Weather App</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="theme-toggle">
+                <i class="fa-solid fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="weather-container">
+        <h1>Weather Forecast</h1>
+        <div class="search-box">
+            <input type="text" id="location" placeholder="Enter city name">
+            <button id="getWeather">Search</button>
+        </div>
+        
+        <div class="temperature-toggle">
+            <span class="unit active" data-unit="celsius">°C</span>
+            <label class="switch">
+                <input type="checkbox" id="tempToggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="unit" data-unit="fahrenheit">°F</span>
+        </div>
+
+        <div id="weather-info" class="hidden">
+            <h2 id="city-name"></h2>
+            <div class="weather-details">
+                <p id="temperature" class="temperature"></p>
+                <p id="weather-condition"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+            </div>
+        </div>
+        <div id="error-message" class="hidden"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/weather-app.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+</html>

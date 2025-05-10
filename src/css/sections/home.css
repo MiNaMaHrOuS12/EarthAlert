@@ -1,0 +1,82 @@
+.hero-section{
+    background-color: var(--primary-color);
+    padding:100px;
+    color: white;
+  }
+  .hero-section .hero-container .hero-container-content{
+    max-width: 500px;
+  }
+  .hero-section .hero-container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 5px;
+}
+.hero-section .hero-container p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+  }
+
+  .hero-section .hero-container a{
+    font-size: 20px;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .hero-section .hero-container a:hover{
+    background-color: var(--button-hover);
+  }
+
+  .main-sction
+  {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px  0;
+  }
+  .main-sction-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .main-sction-container .col i{
+    margin: 10px 0;
+    font-size: 30px;
+    transform: translateY(10%);
+  }
+  .main-sction-container .col i.fa-industry, .main-sction-container .col i.fa-leaf{
+    color: var(--primary-color);
+  }
+
+  .main-sction-container .col i.fa-earth-europe{
+    color: var(--secondary-color);
+  }
+
+  .main-sction-container .col h2{
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .main-sction-container .col p{
+    font-size: 17px;
+    color: #666;
+  }
+
+  .main-sction-container .col .read-more a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    /* text-align: center; */
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .main-sction-container .col .read-more i{
+    font-size: 15px;
+  }
