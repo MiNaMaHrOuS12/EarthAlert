@@ -1,0 +1,64 @@
+.causes-hero-section{
+    background-color: var(--primary-color);
+    padding: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.causes-hero-section h1{
+    color: white !important;
+}
+
+.causes-main-section{
+    padding: 50px;
+}
+
+.causes-main-section .causes-main-section-content{
+    margin-bottom: 50px;
+}
+
+.causes-main-section .causes-main-section-content h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.causes-main-section .causes-main-section-content p{
+    font-size: 18px;
+    color: #666;
+}
+
+.causes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.causes .cause{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.causes .cause:hover{
+    transform: scale(1.05);
+}
+
+.causes .cause .logo{
+    font-size: 40px;
+    color: var(--primary-color);
+}
+.causes .cause .title h2{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+
+.causes .cause .title p{
+    font-size: 16px;
+    color: #666;
+}

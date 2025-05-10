@@ -467,3 +467,14 @@ body {
   [data-theme="dark"] .active::after {
     background-color: var(--primary-color);
   }
+
+
+  [data-theme="dark"] .cause .title h2{
+    color: white;
+  }
+  [data-theme="dark"] .effect .title h2{
+    color: white;
+  }
+  [data-theme="dark"] .solution .title h2{
+    color: white;
+  }
