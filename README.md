@@ -61,6 +61,12 @@ git clone https://github.com/yourusername/EcoAwaken.git
 
 3. Open `index.html` in your web browser to view the website
 
+## Technical Documentation 📚
+
+The project's technical documentation is available in PDF format.
+
+   - Navigate to the `Technical Documentation.pdf` file in the project root and open it to see project insights.
+
 ## Features in Detail 📝
 
 ### Climate Information
