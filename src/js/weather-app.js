@@ -1,3 +1,5 @@
+import { config } from './config.js';
+
 // Theme toggle functionality
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
@@ -17,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// OpenWeatherMap API key
-const apiKey = 'f756cab2bb02e92c41eb8abd1c1c541c';
+// API key configuration
+const apiKey = config.weatherApiKey;
 let currentUnit = 'celsius';
 
 document.getElementById('getWeather').addEventListener('click', function() {
@@ -32,17 +34,24 @@ document.getElementById('getWeather').addEventListener('click', function() {
 
 function fetchWeatherByLocation(location) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
+  console.log('Fetching weather for:', location);
+  console.log('API URL:', url);
   
   fetch(url)
-    .then(response => response.json())
+    .then(response => {
+      console.log('Response status:', response.status);
+      return response.json();
+    })
     .then(data => {
+      console.log('Weather data:', data);
       if (data.cod === 200) {
         displayWeatherData(data);
       } else {
-        showError('City not found. Please try again.');
+        showError(`Error: ${data.message || 'City not found. Please try again.'}`);
       }
     })
     .catch(error => {
+      console.error('Fetch error:', error);
       showError('An error occurred while fetching the weather data.');
     });
 }
@@ -63,17 +72,24 @@ function getUserLocation() {
 
 function fetchWeatherByCoordinates(lat, lon) {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  console.log('Fetching weather for coordinates:', lat, lon);
+  console.log('API URL:', url);
 
   fetch(url)
-    .then(response => response.json())
+    .then(response => {
+      console.log('Response status:', response.status);
+      return response.json();
+    })
     .then(data => {
+      console.log('Weather data:', data);
       if (data.cod === 200) {
         displayWeatherData(data);
       } else {
-        showError('Unable to fetch weather data for your location.');
+        showError(`Error: ${data.message || 'Unable to fetch weather data for your location.'}`);
       }
     })
     .catch(error => {
+      console.error('Fetch error:', error);
       showError('An error occurred while fetching the weather data.');
     });
 }
