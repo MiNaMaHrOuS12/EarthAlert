@@ -62,3 +62,45 @@
     font-size: 16px;
     color: #666;
 }
+
+@media (max-width: 768px) {
+    .causes{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .causes-hero-section h1{
+        font-size: 30px;
+    }
+    .causes-hero-section{
+        padding-top: 100px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .causes-hero-section h1{
+        font-size: 25px;
+    }
+    .causes-hero-section{
+        /* padding-top: 100px !important; */
+        margin-top: 70px;
+    }
+    .causes{
+        padding: 0;
+    }
+    .causes .cause{
+        padding: 20px;
+        margin: 0;
+    }
+    .causes .cause .logo{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .causes .cause .title h2{
+        font-size: 20px;
+    }
+    .causes .cause .title p{
+        font-size: 14px;
+    }
+    
+
+}

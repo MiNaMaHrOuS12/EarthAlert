@@ -119,3 +119,24 @@ textarea{
     cursor: pointer;
     font-weight: 600;
 }
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {
+    .contact-hero-section h1{
+        font-size: 25px;
+    }
+    .contact-hero-section{
+    margin-top: 70px;
+    }
+    .contact-main-section .contacts{
+        flex-direction: column;
+    }
+    .contact-main-section .contacts form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact-main-section .contacts .contact-details{
+        width: 100%;
+    }
+}

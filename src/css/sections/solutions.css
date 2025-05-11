@@ -62,3 +62,45 @@
     font-size: 16px;
     color: #666;
 }
+
+@media (max-width: 768px) {
+    .solutions{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .solutions-hero-section h1{
+        font-size: 30px;
+    }
+    .solutions-hero-section{
+        padding-top: 100px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .solutions-hero-section h1{
+        font-size: 25px;
+    }
+    .solutions-hero-section{
+        /* padding-top: 100px !important; */
+        margin-top: 70px;
+    }
+    .solutions{
+        padding: 0;
+    }
+    .solutions .solution{
+        padding: 20px;
+        margin: 0;
+    }
+    .solutions .solution .logo{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .solutions .solution .title h2{
+        font-size: 20px;
+    }
+    .solutions .solution .title p{
+        font-size: 14px;
+    }
+    
+
+}
