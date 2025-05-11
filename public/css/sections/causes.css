@@ -3,14 +3,17 @@
     padding: 100px;
     text-align: center;
     font-size: 40px;
+    min-height: 200px;
 }
 
 .causes-hero-section h1{
     color: white !important;
+    font-size: 48px;
 }
 
 .causes-main-section{
     padding: 50px;
+    background-color: var(--bg-color);
 }
 
 .causes-main-section .causes-main-section-content{
