@@ -1,4 +1,4 @@
 // Configuration file for API keys and other sensitive data
 export const config = {
-    weatherApiKey: import.meta.env.VITE_WEATHER_API_KEY
+    weatherApiKey: 'f756cab2bb02e92c41eb8abd1c1c541c'
 }; 
