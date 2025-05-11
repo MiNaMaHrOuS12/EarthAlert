@@ -1,0 +1,33 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/public/components/(.*)",
+      "dest": "/public/components/$1"
+    },
+    {
+      "src": "/public/css/(.*)",
+      "dest": "/public/css/$1"
+    },
+    {
+      "src": "/public/js/(.*)",
+      "dest": "/public/js/$1"
+    },
+    {
+      "src": "/public/assets/(.*)",
+      "dest": "/public/assets/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+} 
