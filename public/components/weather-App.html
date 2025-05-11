@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
     <link rel="icon" type="image/png" href="/public/assets/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
         </nav>
     </header>
 
-    <div class="weather-container">
+    <div data-aos="fade-up" class="weather-container">
         <h1>Weather Forecast</h1>
         <div class="search-box">
             <input type="text" id="location" placeholder="Enter city name">
@@ -67,6 +68,19 @@
         <div id="error-message" class="hidden"></div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 400,
+                offset: 50,
+                once: true,
+                mirror: false,
+                disable: false,
+                startEvent: 'DOMContentLoaded'
+            });
+        });
+    </script>
     <script src="/public/js/main.js"></script>
     <script src="/public/js/menu.js"></script>
     <script src="/public/js/weather-app.js" type="module"></script>

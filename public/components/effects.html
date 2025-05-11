@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
     <link rel="icon" type="image/png" href="../../public/assets/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -51,28 +50,28 @@
             <p>Climate change has far-reaching effects on our planet, from rising sea levels to extreme weather events.</p>
         </div>
         <div class="effects">
-            <div class="effect" data-aos="zoom-in" data-aos-delay="100">
+            <div class="effect" data-aos="flip-left">
                 <div class="logo"><i class="fas fa-temperature-high"></i></div>
                 <div class="title">
                     <h2>Rising Temperatures</h2>
                     <p>Global temperatures are rising at an unprecedented rate, leading to heatwaves and extreme weather events.</p>
                 </div>
             </div>
-            <div class="effect" data-aos="zoom-in" data-aos-delay="200">
+            <div class="effect" data-aos="flip-right">
                 <div class="logo"><i class="fas fa-water"></i></div>
                 <div class="title">
                     <h2>Rising Sea Levels</h2>
                     <p>Melting ice caps and thermal expansion are causing sea levels to rise, threatening coastal communities.</p>
                 </div>
             </div>
-            <div class="effect" data-aos="zoom-in" data-aos-delay="300">
+            <div class="effect" data-aos="flip-left">
                 <div class="logo"><i class="fas fa-wind"></i></div>
                 <div class="title">
                     <h2>Extreme Weather</h2>
                     <p>More frequent and intense storms, floods, and droughts are becoming the new normal.</p>
                 </div>
             </div>
-            <div class="effect" data-aos="zoom-in" data-aos-delay="400">
+            <div class="effect" data-aos="flip-right">
                 <div class="logo"><i class="fas fa-seedling"></i></div>
                 <div class="title">
                     <h2>Ecosystem Disruption</h2>
@@ -114,6 +113,19 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 400,
+                offset: 50,
+                once: true,
+                mirror: false,
+                disable: false,
+                startEvent: 'DOMContentLoaded'
+            });
+        });
+    </script>
     <script src="../js/main.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/theme.js"></script>

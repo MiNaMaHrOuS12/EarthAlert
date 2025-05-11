@@ -1,12 +1,18 @@
 .contact-hero-section{
     background-color: var(--primary-color);
-    padding: 100px;
+    padding: 100px 20px;
     text-align: center;
-    font-size: 40px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .contact-hero-section h1{
     color: white !important;
+    font-size: 48px;
+    margin: 0;
 }
 
 .contact-main-section{
@@ -15,16 +21,21 @@
 
 .contact-main-section .contact-main-section-content{
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .contact-main-section .contact-main-section-content h2{
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 .contact-main-section .contact-main-section-content p{
     font-size: 18px;
     color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .contact-main-section .contacts{

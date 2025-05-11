@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
     <link rel="icon" type="image/png" href="../../public/assets/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -51,28 +50,28 @@
             <p>There are many ways we can combat climate change, from individual actions to global initiatives.</p>
         </div>
         <div class="solutions">
-            <div class="solution" data-aos="flip-left" data-aos-delay="100">
+            <div class="solution" data-aos="flip-left">
                 <div class="logo"><i class="fas fa-solar-panel"></i></div>
                 <div class="title">
                     <h2>Renewable Energy</h2>
                     <p>Transitioning to renewable energy sources like solar and wind power can significantly reduce carbon emissions.</p>
                 </div>
             </div>
-            <div class="solution" data-aos="flip-right" data-aos-delay="200">
+            <div class="solution" data-aos="flip-right">
                 <div class="logo"><i class="fas fa-recycle"></i></div>
                 <div class="title">
                     <h2>Reduce, Reuse, Recycle</h2>
                     <p>Implementing the three Rs can help reduce waste and conserve natural resources.</p>
                 </div>
             </div>
-            <div class="solution" data-aos="flip-left" data-aos-delay="300">
+            <div class="solution" data-aos="flip-left">
                 <div class="logo"><i class="fas fa-tree"></i></div>
                 <div class="title">
                     <h2>Forest Conservation</h2>
                     <p>Protecting and restoring forests helps absorb carbon dioxide and maintain biodiversity.</p>
                 </div>
             </div>
-            <div class="solution" data-aos="flip-right" data-aos-delay="400">
+            <div class="solution" data-aos="flip-right">
                 <div class="logo"><i class="fas fa-car"></i></div>
                 <div class="title">
                     <h2>Sustainable Transportation</h2>
@@ -114,6 +113,19 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 400,
+                offset: 50,
+                once: true,
+                mirror: false,
+                disable: false,
+                startEvent: 'DOMContentLoaded'
+            });
+        });
+    </script>
     <script src="../js/main.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/theme.js"></script>

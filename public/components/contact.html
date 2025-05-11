@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
     <link rel="icon" type="image/png" href="../../public/assets/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
             </div>
         </nav>
     </header>
-    <div class="contact-hero-section">
+    <div data-aos="fade-down" class="contact-hero-section">
         <div class="main-section-container-content">
             <h1>Contact</h1>
         </div>
@@ -50,14 +51,14 @@
             <p>We'd love to hear from you! Whether you have a question, a suggestion, or just want to say hello, we're here to help.</p>
         </div>
         <div class="contacts">
-            <form action="">
+            <form data-aos="fade-right" action="">
                 <input type="text" placeholder="Name">
                 <input type="Email" placeholder="Email">
                 <input type="Subject" placeholder="Subject">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button>Send Message</button>
             </form>
-            <div class="contact-details">
+            <div data-aos="fade-left"  class="contact-details">
                 <ul>
                     <li>
                         <div class="logo"><i class="fas fa-envelope"></i></div>
@@ -84,7 +85,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer data-aos="fade-up">
         <div class="footer-content">
             <div class="social-links">
                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -117,6 +118,19 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                offset: 50,
+                once: true,
+                mirror: false,
+                disable: false,
+                startEvent: 'DOMContentLoaded'
+            });
+        });
+    </script>
     <script src="../js/main.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/theme.js"></script>

@@ -1,12 +1,18 @@
 .effects-hero-section{
     background-color: var(--primary-color);
-    padding: 100px;
+    padding: 100px 20px;
     text-align: center;
-    font-size: 40px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .effects-hero-section h1{
     color: white !important;
+    font-size: 48px;
+    margin: 0;
 }
 
 .effects-main-section{
@@ -15,16 +21,21 @@
 
 .effects-main-section .effects-main-section-content{
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .effects-main-section .effects-main-section-content h2{
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 .effects-main-section .effects-main-section-content p{
     font-size: 18px;
     color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .effects{
@@ -37,10 +48,10 @@
 
 .effects .effect{
     text-align: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    background-color: var(--card-bg);
     transition: all 0.3s ease;
 }
 
@@ -49,18 +60,20 @@
 }
 
 .effects .effect .logo{
-    font-size: 40px;
+    font-size: 48px;
     color: var(--primary-color);
+    margin-bottom: 20px;
 }
 .effects .effect .title h2{
-    margin-bottom: 10px;
-    color: black;
-    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 .effects .effect .title p{
     font-size: 16px;
-    color: #666;
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
